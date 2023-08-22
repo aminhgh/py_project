@@ -10,7 +10,17 @@ def Repeat(x):
                 repeated.append(x[i])
     return repeated
 
-list_1 = [10,20,30,20,20,20,50,40,40,60,5,10,1,30,30]
+# number of elements
+n = int(input("Enter number of elements : "))
 
-print(Repeat(list_1))
+# Below line read inputs from user using map() function
+a = list(map(int,
+	input("\nEnter the numbers : ").strip().split()))[:n]
+
+print("\nList is - ", a)
+
+
+print(a)
+
+print(Repeat(a))
 
